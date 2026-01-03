@@ -15,7 +15,7 @@ export type Theme =
 const STORAGE_KEY = "app-theme";
 
 export function useTheme() {
-    const [theme, setTheme] = useState<Theme>("default");
+    const [theme, setTheme] = useState<Theme>("memphis");
 
     useEffect(() => {
         const saved = localStorage.getItem(STORAGE_KEY) as Theme | null;

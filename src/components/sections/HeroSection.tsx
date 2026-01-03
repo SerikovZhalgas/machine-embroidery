@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-embroidery.jpg";
 import { Sparkles, Home, TrendingUp } from "lucide-react";
 import {ThemeSwitcher} from "@/switcher/ThemeSwitcher.tsx";
+import {useTheme} from "@/hooks/useTheme.ts";
 
 const HeroSection = () => {
     return (
         <section className="relative min-h-[90vh] bg-background overflow-hidden">
-            <div className="relative z-20">
-             <ThemeSwitcher />
-            </div>
+            {/*<div className="relative z-20">*/}
+            {/* <ThemeSwitcher />*/}
+            {/*</div>*/}
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card"/>
 
