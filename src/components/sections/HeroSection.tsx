@@ -6,8 +6,8 @@ import {ThemeSwitcher} from "@/switcher/ThemeSwitcher.tsx";
 const HeroSection = () => {
     return (
         <section className="relative min-h-[90vh] bg-background overflow-hidden">
-            <div className="absolute top-6 right-6 z-20">
-                <ThemeSwitcher />
+            <div className="relative z-20">
+             <ThemeSwitcher />
             </div>
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card"/>
