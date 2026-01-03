@@ -67,6 +67,236 @@
     --sidebar-accent-foreground: 20 25% 18%;
     --sidebar-border: 35 25% 85%;
     --sidebar-ring: 18 55% 52%;
+
+
+
+
+
+    /*--background: 45 30% 96%;*/
+    /*--foreground: 160 15% 18%;*/
+
+    /*--card: 45 25% 94%;*/
+    /*--card-foreground: 160 15% 18%;*/
+
+    /*--primary: 150 25% 42%;            !* Sage green *!*/
+    /*--primary-foreground: 45 30% 96%;*/
+
+    /*--secondary: 45 20% 90%;*/
+    /*--secondary-foreground: 160 15% 18%;*/
+
+    /*--muted: 45 15% 92%;*/
+    /*--muted-foreground: 160 10% 40%;*/
+
+    /*--accent: 150 20% 88%;*/
+    /*--accent-foreground: 160 15% 18%;*/
+
+    /*--border: 45 15% 85%;*/
+    /*--ring: 150 25% 42%;*/
+
+
+
+
+
+
+    /*--background: 220 25% 97%;*/
+    /*--foreground: 230 20% 18%;*/
+
+    /*--card: 220 20% 95%;*/
+    /*--card-foreground: 230 20% 18%;*/
+
+    /*--primary: 230 55% 55%;            !* Indigo *!*/
+    /*--primary-foreground: 220 25% 97%;*/
+
+    /*--secondary: 220 20% 90%;*/
+    /*--secondary-foreground: 230 20% 18%;*/
+
+    /*--muted: 220 15% 92%;*/
+    /*--muted-foreground: 230 15% 45%;*/
+
+    /*--accent: 230 30% 88%;*/
+    /*--accent-foreground: 230 20% 18%;*/
+
+    /*--border: 220 15% 85%;*/
+    /*--ring: 230 55% 55%;*/
+
+
+
+
+
+    /*--background: 20 35% 97%;*/
+    /*--foreground: 15 20% 20%;*/
+
+    /*--card: 20 30% 95%;*/
+    /*--card-foreground: 15 20% 20%;*/
+
+    /*--primary: 350 30% 55%;           !* Dusty rose *!*/
+    /*--primary-foreground: 20 35% 97%;*/
+
+    /*--secondary: 20 25% 90%;*/
+    /*--secondary-foreground: 15 20% 20%;*/
+
+    /*--muted: 20 20% 92%;*/
+    /*--muted-foreground: 15 15% 45%;*/
+
+    /*--accent: 350 25% 88%;*/
+    /*--accent-foreground: 15 20% 20%;*/
+
+    /*--border: 20 20% 85%;*/
+    /*--ring: 350 30% 55%;*/
+
+
+
+
+    /*--background: 30 10% 96%;*/
+    /*--foreground: 30 10% 15%;*/
+
+    /*--card: 30 10% 94%;*/
+    /*--card-foreground: 30 10% 15%;*/
+
+    /*--primary: 38 70% 50%;            !* Gold *!*/
+    /*--primary-foreground: 30 10% 15%;*/
+
+    /*--secondary: 30 10% 88%;*/
+    /*--secondary-foreground: 30 10% 15%;*/
+
+    /*--muted: 30 8% 90%;*/
+    /*--muted-foreground: 30 8% 40%;*/
+
+    /*--accent: 38 60% 85%;*/
+    /*--accent-foreground: 30 10% 15%;*/
+
+    /*--border: 30 8% 82%;*/
+    /*--ring: 38 70% 50%;*/
+
+
+
+
+    /*--background: 0 0% 98%;*/
+    /*--foreground: 0 0% 5%;*/
+
+    /*--card: 0 0% 100%;*/
+    /*--card-foreground: 0 0% 5%;*/
+
+    /*--primary: 240 100% 50%;      !* Electric blue *!*/
+    /*--primary-foreground: 0 0% 100%;*/
+
+    /*--secondary: 60 100% 50%;     !* Acid yellow *!*/
+    /*--secondary-foreground: 0 0% 5%;*/
+
+    /*--accent: 0 0% 5%;*/
+    /*--accent-foreground: 0 0% 100%;*/
+
+    /*--border: 0 0% 5%;*/
+    /*--ring: 240 100% 50%;*/
+
+
+
+
+
+    /*--background: 230 30% 6%;*/
+    /*--foreground: 180 100% 85%;*/
+
+    /*--card: 230 25% 10%;*/
+    /*--card-foreground: 180 100% 85%;*/
+
+    /*--primary: 180 100% 50%;      !* Neon cyan *!*/
+    /*--primary-foreground: 230 30% 6%;*/
+
+    /*--secondary: 300 100% 60%;    !* Neon magenta *!*/
+    /*--secondary-foreground: 230 30% 6%;*/
+
+    /*--accent: 180 80% 20%;*/
+    /*--accent-foreground: 180 100% 85%;*/
+
+    /*--border: 180 50% 25%;*/
+    /*--ring: 180 100% 50%;*/
+
+
+
+
+
+    /*--background: 0 0% 100%;*/
+    /*--foreground: 0 0% 0%;*/
+
+    /*--card: 0 0% 98%;*/
+    /*--card-foreground: 0 0% 0%;*/
+
+    /*--primary: 0 0% 0%;*/
+    /*--primary-foreground: 0 0% 100%;*/
+
+    /*--secondary: 0 0% 90%;*/
+    /*--secondary-foreground: 0 0% 0%;*/
+
+    /*--accent: 0 0% 0%;*/
+    /*--accent-foreground: 0 0% 100%;*/
+
+    /*--border: 0 0% 0%;*/
+    /*--ring: 0 0% 0%;*/
+
+
+
+
+
+    /*--background: 15 30% 6%;*/
+    /*--foreground: 20 20% 92%;*/
+
+    /*--card: 15 25% 10%;*/
+    /*--card-foreground: 20 20% 92%;*/
+
+    /*--primary: 10 90% 55%;        !* Lava red *!*/
+    /*--primary-foreground: 15 30% 6%;*/
+
+    /*--secondary: 40 100% 55%;     !* Amber *!*/
+    /*--secondary-foreground: 15 30% 6%;*/
+
+    /*--accent: 10 80% 20%;*/
+    /*--accent-foreground: 20 20% 92%;*/
+
+    /*--border: 10 50% 25%;*/
+    /*--ring: 10 90% 55%;*/
+
+
+
+
+
+    /*--background: 120 20% 6%;*/
+    /*--foreground: 120 30% 85%;*/
+
+    /*--card: 120 20% 10%;*/
+    /*--card-foreground: 120 30% 85%;*/
+
+    /*--primary: 120 60% 45%;       !* Terminal green *!*/
+    /*--primary-foreground: 120 20% 6%;*/
+
+    /*--secondary: 120 20% 20%;*/
+    /*--secondary-foreground: 120 30% 85%;*/
+
+    /*--accent: 120 50% 25%;*/
+    /*--accent-foreground: 120 30% 85%;*/
+
+    /*--border: 120 30% 30%;*/
+    /*--ring: 120 60% 45%;*/
+
+
+
+
+    /*--background: 50 100% 95%;*/
+    /*--foreground: 240 20% 15%;*/
+
+    /*--card: 0 0% 100%;*/
+    /*--card-foreground: 240 20% 15%;*/
+
+    /*--primary: 330 100% 60%;      !* Hot pink *!*/
+    /*--primary-foreground: 0 0% 100%;*/
+
+    /*--secondary: 210 100% 50%;    !* Blue *!*/
+    /*--secondary-foreground: 0 0% 100%;*/
+
+    /*--accent: 50 100% 50%;        !* Yellow *!*/
+    /*--accent-foreground: 240 20% 15%;*/
+
+    /*--border: 240 20% 15%;*/
+    /*--ring: 330 100% 60%;*/
   }
 
   .dark {
@@ -169,3 +399,157 @@
 .animation-delay-300 { animation-delay: 0.3s; }
 .animation-delay-400 { animation-delay: 0.4s; }
 .animation-delay-500 { animation-delay: 0.5s; }
+
+
+
+/* 🌿 Sage & Linen */
+[data-theme="sage"] {
+  --background: 45 30% 96%;
+  --foreground: 160 15% 18%;
+  --card: 45 25% 94%;
+  --card-foreground: 160 15% 18%;
+  --primary: 150 25% 42%;
+  --primary-foreground: 45 30% 96%;
+  --secondary: 45 20% 90%;
+  --secondary-foreground: 160 15% 18%;
+  --muted: 45 15% 92%;
+  --muted-foreground: 160 10% 40%;
+  --accent: 150 20% 88%;
+  --accent-foreground: 160 15% 18%;
+  --border: 45 15% 85%;
+  --ring: 150 25% 42%;
+}
+
+/* 🔵 Indigo / EdTech */
+[data-theme="indigo"] {
+  --background: 220 25% 97%;
+  --foreground: 230 20% 18%;
+  --card: 220 20% 95%;
+  --card-foreground: 230 20% 18%;
+  --primary: 230 55% 55%;
+  --primary-foreground: 220 25% 97%;
+  --secondary: 220 20% 90%;
+  --secondary-foreground: 230 20% 18%;
+  --muted: 220 15% 92%;
+  --muted-foreground: 230 15% 45%;
+  --accent: 230 30% 88%;
+  --accent-foreground: 230 20% 18%;
+  --border: 220 15% 85%;
+  --ring: 230 55% 55%;
+}
+
+/* 🌸 Dusty Rose */
+[data-theme="rose"] {
+  --background: 20 35% 97%;
+  --foreground: 15 20% 20%;
+  --card: 20 30% 95%;
+  --card-foreground: 15 20% 20%;
+  --primary: 350 30% 55%;
+  --primary-foreground: 20 35% 97%;
+  --secondary: 20 25% 90%;
+  --secondary-foreground: 15 20% 20%;
+  --muted: 20 20% 92%;
+  --muted-foreground: 15 15% 45%;
+  --accent: 350 25% 88%;
+  --accent-foreground: 15 20% 20%;
+  --border: 20 20% 85%;
+  --ring: 350 30% 55%;
+}
+
+/* ⚫ Charcoal & Gold */
+[data-theme="gold"] {
+  --background: 30 10% 96%;
+  --foreground: 30 10% 15%;
+  --card: 30 10% 94%;
+  --card-foreground: 30 10% 15%;
+  --primary: 38 70% 50%;
+  --primary-foreground: 30 10% 15%;
+  --secondary: 30 10% 88%;
+  --secondary-foreground: 30 10% 15%;
+  --muted: 30 8% 90%;
+  --muted-foreground: 30 8% 40%;
+  --accent: 38 60% 85%;
+  --accent-foreground: 30 10% 15%;
+  --border: 30 8% 82%;
+  --ring: 38 70% 50%;
+}
+
+/* 🧊 Neo-Brutalism */
+[data-theme="neo"] {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 5%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 5%;
+  --primary: 240 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 100% 50%;
+  --secondary-foreground: 0 0% 5%;
+  --accent: 0 0% 5%;
+  --accent-foreground: 0 0% 100%;
+  --border: 0 0% 5%;
+  --ring: 240 100% 50%;
+}
+
+/* 🧪 Cyber Neon */
+[data-theme="cyber"] {
+  --background: 230 30% 6%;
+  --foreground: 180 100% 85%;
+  --card: 230 25% 10%;
+  --card-foreground: 180 100% 85%;
+  --primary: 180 100% 50%;
+  --primary-foreground: 230 30% 6%;
+  --secondary: 300 100% 60%;
+  --secondary-foreground: 230 30% 6%;
+  --accent: 180 80% 20%;
+  --accent-foreground: 180 100% 85%;
+  --border: 180 50% 25%;
+  --ring: 180 100% 50%;
+}
+
+/* 🌋 Volcanic */
+[data-theme="volcanic"] {
+  --background: 15 30% 6%;
+  --foreground: 20 20% 92%;
+  --card: 15 25% 10%;
+  --card-foreground: 20 20% 92%;
+  --primary: 10 90% 55%;
+  --primary-foreground: 15 30% 6%;
+  --secondary: 40 100% 55%;
+  --secondary-foreground: 15 30% 6%;
+  --accent: 10 80% 20%;
+  --accent-foreground: 20 20% 92%;
+  --border: 10 50% 25%;
+  --ring: 10 90% 55%;
+}
+
+/* 🧬 Terminal */
+[data-theme="terminal"] {
+  --background: 120 20% 6%;
+  --foreground: 120 30% 85%;
+  --card: 120 20% 10%;
+  --card-foreground: 120 30% 85%;
+  --primary: 120 60% 45%;
+  --primary-foreground: 120 20% 6%;
+  --secondary: 120 20% 20%;
+  --secondary-foreground: 120 30% 85%;
+  --accent: 120 50% 25%;
+  --accent-foreground: 120 30% 85%;
+  --border: 120 30% 30%;
+  --ring: 120 60% 45%;
+}
+
+/* 🌈 Memphis / 90s */
+[data-theme="memphis"] {
+  --background: 50 100% 95%;
+  --foreground: 240 20% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 20% 15%;
+  --primary: 330 100% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 100% 50%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 50 100% 50%;
+  --accent-foreground: 240 20% 15%;
+  --border: 240 20% 15%;
+  --ring: 330 100% 60%;
+}

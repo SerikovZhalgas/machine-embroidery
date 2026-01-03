@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-embroidery.jpg";
 import { Sparkles, Home, TrendingUp } from "lucide-react";
+import {ThemeSwitcher} from "@/switcher/ThemeSwitcher.tsx";
 
 const HeroSection = () => {
     return (
         <section className="relative min-h-[90vh] bg-background overflow-hidden">
+            <div className="absolute top-6 right-6 z-20">
+                <ThemeSwitcher />
+            </div>
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card"/>
 
             <div className="container relative z-10 mx-auto px-4 py-12 lg:py-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -15,7 +19,7 @@ const HeroSection = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight text-foreground">
                             Освой машинную вышивку и начни{" "}
                             <span className="text-primary italic">зарабатывать</span>
-                            <br />
+                            <br/>
                             на своём творчестве
                         </h1>
 
@@ -38,8 +42,9 @@ const HeroSection = () => {
                             />
                         </div>
                         {/* Decorative element */}
-                        <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
-                        <div className="absolute -top-4 -left-4 w-32 h-32 bg-terracotta-light/20 rounded-full blur-3xl" />
+                        <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"/>
+                        <div
+                            className="absolute -top-4 -left-4 w-32 h-32 bg-terracotta-light/20 rounded-full blur-3xl"/>
                     </div>
                 </div>
 
@@ -47,15 +52,15 @@ const HeroSection = () => {
                 <div className="mt-16 lg:mt-24 animate-fade-up animation-delay-300">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                         <BenefitItem
-                            icon={<Sparkles className="w-6 h-6" />}
+                            icon={<Sparkles className="w-6 h-6"/>}
                             title="Для новичков и мастеров"
                         />
                         <BenefitItem
-                            icon={<Home className="w-6 h-6" />}
+                            icon={<Home className="w-6 h-6"/>}
                             title="Работа из дома"
                         />
                         <BenefitItem
-                            icon={<TrendingUp className="w-6 h-6" />}
+                            icon={<TrendingUp className="w-6 h-6"/>}
                             title="Своя прибыльная ниша"
                         />
                     </div>
@@ -65,7 +70,7 @@ const HeroSection = () => {
     );
 };
 
-const BenefitItem = ({ icon, title }: { icon: React.ReactNode; title: string }) => (
+const BenefitItem = ({icon, title}: { icon: React.ReactNode; title: string }) => (
     <div className="flex items-center gap-4 p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 shadow-soft hover:shadow-card transition-all duration-300">
         <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
             {icon}
