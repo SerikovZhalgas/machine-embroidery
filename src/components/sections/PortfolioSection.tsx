@@ -1,56 +1,133 @@
-import workJacket from "@/assets/work-jacket.jpg";
-import workName from "@/assets/work-name.jpg";
-import workMonogram from "@/assets/work-monogram.jpg";
-import workChristmas from "@/assets/work-christmas.jpg";
+import {useState} from "react";
+import work1 from "@/assets/work1.jpeg";
+import work2 from "@/assets/work2.jpeg";
+import work3 from "@/assets/work3.jpeg";
+import work4 from "@/assets/work4.jpeg";
+import work5 from "@/assets/work5.jpeg";
+import work6 from "@/assets/work6.jpeg";
+import work7 from "@/assets/work7.jpeg";
+import work8 from "@/assets/work8.jpeg";
+import work9 from "@/assets/work9.jpeg";
+import work10 from "@/assets/work10.jpeg";
+import work11 from "@/assets/work11.jpeg";
+import work12 from "@/assets/work12.jpeg";
+import {useLanguage} from "@/contexts/LanguageContext.tsx";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ImageLightbox from "@/components/ui/image-lightbox";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const PortfolioSection = () => {
+  const {t} = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   const works = [
     {
-      image: workJacket,
-      alt: "Вышивка на джинсовой куртке",
+      image: work1,
     },
     {
-      image: workName,
-      alt: "Именная вышивка",
+      image: work2,
     },
     {
-      image: workMonogram,
-      alt: "Монограмма",
+      image: work3,
     },
     {
-      image: workChristmas,
-      alt: "Новогодние украшения",
+      image: work4,
+    },
+    {
+      image: work5,
+    },
+    {
+      image: work6,
+    },
+    {
+      image: work7,
+    },
+    {
+      image: work8,
+    },
+    {
+      image: work9,
+    },
+    {
+      image: work10,
+    },
+    {
+      image: work11,
+    },
+    {
+      image: work12,
     },
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-center text-foreground mb-16">
-          Ваши будущие работы:
-        </h2>
+      <section className="py-20 lg:py-28 bg-background overflow-hidden">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-center text-foreground mb-16">
+            {t('portfolio.title')}
+          </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
-          {works.map((work, index) => (
-            <div
-              key={index}
-              className="group animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+          <div className="relative max-w-6xl mx-auto group">
+            <Swiper
+                modules={[Navigation]}
+                spaceBetween={24}
+                slidesPerView={2} // По умолчанию для мобильных
+                navigation={{
+                  nextEl: '.swiper-button-next-custom',
+                  prevEl: '.swiper-button-prev-custom',
+                }}
+                breakpoints={{
+                  // Настройки адаптивности
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                  },
+                }}
+                className="portfolio-swiper"
             >
-              <div className="overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:shadow-card hover:-translate-y-1">
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={work.image}
-                    alt={work.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
+              {works.map((work, index) => (
+                  <SwiperSlide key={index}>
+                    <div
+                      className="group animate-scale-in cursor-pointer"
+                      onClick={() => setSelectedImage({ src: work.image, alt: t("portfolio.work") })}
+                    >
+                      <div className="overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:shadow-card hover:-translate-y-1">
+                        <div className="aspect-square overflow-hidden">
+                          <img
+                              src={work.image}
+                              alt={t("portfolio.work")}
+                              className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Кнопки навигации */}
+            <button
+                className="swiper-button-prev-custom absolute left-[-10px] md:left-[0] top-1/2 -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg text-foreground hover:bg-primary hover:text-white transition-colors disabled:opacity-30">
+              <ChevronLeft size={24}/>
+            </button>
+
+            <button
+                className="swiper-button-next-custom absolute right-[-10px] md:right-[0] top-1/2 -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg text-foreground hover:bg-primary hover:text-white transition-colors disabled:opacity-30">
+              <ChevronRight size={24}/>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <ImageLightbox
+            isOpen={!!selectedImage}
+            onClose={() => setSelectedImage(null)}
+            imageSrc={selectedImage?.src || ""}
+            imageAlt={selectedImage?.alt || ""}
+        />
+      </section>
   );
 };
 

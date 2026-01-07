@@ -78,8 +78,8 @@ export default {
         gold: "hsl(var(--gold))",
       },
       fontFamily: {
-        sans: ["Lato", "system-ui", "sans-serif"],
-        serif: ["Playfair Display", "Georgia", "serif"],
+        sans: ["Montserrat", "system-ui", "sans-serif"],
+        serif: ["Lora", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

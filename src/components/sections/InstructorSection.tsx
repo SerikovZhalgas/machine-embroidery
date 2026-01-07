@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
-import instructorImage from "@/assets/instructor.jpg";
+import instructorImage from "@/assets/instructor.jpeg";
+import {useLanguage} from "@/contexts/LanguageContext.tsx";
+import {handleBooking} from "@/lib/utils.ts";
 
 const InstructorSection = () => {
+  const {t} = useLanguage();
+
   return (
     <section className="py-20 lg:py-28 bg-secondary/50">
       <div className="container mx-auto px-4">
@@ -10,25 +14,25 @@ const InstructorSection = () => {
           <div className="space-y-6 animate-fade-up order-2 lg:order-1">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground">
-                Татьяна Иванова,
+                {t('instructor.name')}
               </h2>
               <p className="text-lg text-muted-foreground mt-2">
-                Ваш эксперт по машинной вышивке
+                {t('instructor.role')}
               </p>
             </div>
 
             <p className="text-foreground leading-relaxed">
-              10 лет опыта, сотни довольных учениц и тысяча вышитых изделий
+              {t('instructor.description')}
             </p>
 
             <blockquote className="relative pl-6 border-l-4 border-primary py-2">
               <p className="text-lg italic text-foreground">
-                «Поверьте в себя — и у вас всё получится!»
+                {t('instructor.quote')}
               </p>
             </blockquote>
 
-            <Button variant="hero" size="lg" className="mt-6">
-              Записаться на курс
+            <Button onClick={() => handleBooking(false)} variant="hero" size="lg" className="mt-6">
+              {t('hero.cta')}
             </Button>
           </div>
 
@@ -41,7 +45,7 @@ const InstructorSection = () => {
               <div className="relative overflow-hidden rounded-3xl shadow-elevated">
                 <img
                   src={instructorImage}
-                  alt="Татьяна Иванова - эксперт по машинной вышивке"
+                  alt={t('instructor.imageAlt')}
                   className="w-full h-auto object-cover"
                 />
               </div>

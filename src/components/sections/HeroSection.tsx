@@ -3,8 +3,12 @@ import heroImage from "@/assets/hero-embroidery.jpg";
 import { Sparkles, Home, TrendingUp } from "lucide-react";
 import {ThemeSwitcher} from "@/switcher/ThemeSwitcher.tsx";
 import {useTheme} from "@/hooks/useTheme.ts";
+import {useLanguage} from "@/contexts/LanguageContext.tsx";
+import {handleBooking} from "@/lib/utils.ts";
 
 const HeroSection = () => {
+    const {t} = useLanguage();
+
     return (
         <section className="relative min-h-[90vh] bg-background overflow-hidden">
             {/*<div className="relative z-20">*/}
@@ -17,19 +21,19 @@ const HeroSection = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="space-y-8 animate-fade-up">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight text-foreground">
-                            Освой машинную вышивку и начни{" "}
-                            <span className="text-primary italic">зарабатывать</span>
+                        <h1 className="max-w-[90vw] text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight text-foreground break-words overflow-wrap-anywhere">
+                            {t("hero.title1")}{" "}
+                            <span className="text-primary italic">{t("hero.title2")}</span>
                             <br/>
-                            на своём творчестве
+                            {t("hero.title3")}
                         </h1>
 
                         <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-                            От первых стежков до уверенной работы на вышивальной машине
+                            {t("hero.subtitle")}
                         </p>
 
-                        <Button variant="hero" size="lg" className="mt-4">
-                            Записаться на курс
+                        <Button onClick={() => handleBooking(false)} variant="hero" size="lg" className="mt-4">
+                            {t("hero.cta")}
                         </Button>
                     </div>
 
@@ -54,15 +58,15 @@ const HeroSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                         <BenefitItem
                             icon={<Sparkles className="w-6 h-6"/>}
-                            title="Для новичков и мастеров"
+                            title={t("hero.benefit1")}
                         />
                         <BenefitItem
                             icon={<Home className="w-6 h-6"/>}
-                            title="Работа из дома"
+                            title={t("hero.benefit2")}
                         />
                         <BenefitItem
                             icon={<TrendingUp className="w-6 h-6"/>}
-                            title="Своя прибыльная ниша"
+                            title={t("hero.benefit3")}
                         />
                     </div>
                 </div>
