@@ -11,6 +11,7 @@ import work9 from "@/assets/work9.jpeg";
 import work10 from "@/assets/work10.jpeg";
 import work11 from "@/assets/work11.jpeg";
 import work12 from "@/assets/work12.jpeg";
+import work13 from "@/assets/work13.jpeg";
 import {useLanguage} from "@/contexts/LanguageContext.tsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -60,6 +61,9 @@ const PortfolioSection = () => {
     },
     {
       image: work12,
+    },
+    {
+      image: work13,
     },
   ];
 
