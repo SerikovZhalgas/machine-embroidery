@@ -4,7 +4,7 @@ import {useLanguage} from "@/contexts/LanguageContext.tsx";
 import {handleBooking} from "@/lib/utils.ts";
 
 const InstructorSection = () => {
-  const {t} = useLanguage();
+  const {t, language} = useLanguage();
 
   return (
     <section className="py-20 lg:py-28 bg-secondary/50">
@@ -31,7 +31,7 @@ const InstructorSection = () => {
               </p>
             </blockquote>
 
-            <Button onClick={() => handleBooking(false)} variant="hero" size="lg" className="mt-6">
+            <Button onClick={() => handleBooking(language, false)} variant="hero" size="lg" className="mt-6">
               {t('hero.cta')}
             </Button>
           </div>

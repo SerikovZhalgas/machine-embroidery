@@ -5,10 +5,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function handleBooking(isFranchise: boolean) {
+export function handleBooking(language: 'ru' | 'kk', isFranchise: boolean) {
   const phoneNumber = "77761259549";
-  const message = encodeURIComponent("Здравствуйте! Хочу записаться на курс.");
-  const messageFranchise = encodeURIComponent("Здравствуйте! Расскажите подробнее о франшизе.");
+  const message = encodeURIComponent(language === 'ru' ? "Здравствуйте! Хочу записаться на курс." : "Сәлеметсіз бе! Курсқа жазылғым келеді.");
+  const messageFranchise = encodeURIComponent(language === 'ru' ? "Здравствуйте! Расскажите подробнее о франшизе." : "Сәлеметсіз бе! Франшиза туралы толығырақ айтып беріңізші.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${isFranchise ? messageFranchise : message}`;
   window.open(whatsappUrl, '_blank');
 };

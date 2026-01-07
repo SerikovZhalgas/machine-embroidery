@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {handleBooking} from "@/lib/utils.ts";
 
 export const FranchiseSection = () => {
-    const {t} = useLanguage();
+    const {t, language} = useLanguage();
 
     return (
         <section className="py-10 lg:py-10 bg-background">
@@ -13,7 +13,7 @@ export const FranchiseSection = () => {
                 </h2>
 
                 <div className="flex justify-center">
-                    <Button onClick={()=>handleBooking(true)} variant="hero" size="lg" className="text-center">
+                    <Button onClick={()=>handleBooking(language, true)} variant="hero" size="lg" className="text-center">
                         {t('franchise.cta')}
                     </Button>
                 </div>

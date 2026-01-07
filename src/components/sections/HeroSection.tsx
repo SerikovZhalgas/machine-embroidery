@@ -7,7 +7,7 @@ import {useLanguage} from "@/contexts/LanguageContext.tsx";
 import {handleBooking} from "@/lib/utils.ts";
 
 const HeroSection = () => {
-    const {t} = useLanguage();
+    const {t, language} = useLanguage();
 
     return (
         <section className="relative min-h-[90vh] bg-background overflow-hidden">
@@ -32,7 +32,7 @@ const HeroSection = () => {
                             {t("hero.subtitle")}
                         </p>
 
-                        <Button onClick={() => handleBooking(false)} variant="hero" size="lg" className="mt-4">
+                        <Button onClick={() => handleBooking(language, false)} variant="hero" size="lg" className="mt-4">
                             {t("hero.cta")}
                         </Button>
                     </div>
