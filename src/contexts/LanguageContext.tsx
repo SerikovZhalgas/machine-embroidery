@@ -53,6 +53,16 @@ const translations: Record<Language, Record<string, string>> = {
         "franchise.title": "Франшиза",
         "franchise.cta": "Связаться",
 
+        // Video
+        "video.title": "Видео о курсе",
+        "video.subtitle": "Посмотрите, как проходит обучение и какие результаты получают ученицы",
+        "video.item1.title": "JAUBASAR TEAM",
+        "video.item1.description": "Пример работы",
+        "video.item2.title": "Орнамент",
+        "video.item2.description": "Пример работы",
+        "video.item3.title": "Любимым",
+        "video.item3.description": "Пример работы",
+
         // Footer
         "footer.tagline": "Машинная вышивка — ваш путь к творчеству и заработку",
         "footer.copyright": "© 2026 Все права защищены",
@@ -100,6 +110,16 @@ const translations: Record<Language, Record<string, string>> = {
         // Franchise
         "franchise.title": "Франшиза",
         "franchise.cta": "Байланыс",
+
+        // Video
+        "video.title": "Курс туралы бейнелер",
+        "video.subtitle": "Оқытудың қалай өтетінін және оқушылардың қандай нәтижелерге қол жеткізетінін көріңіз",
+        "video.item1.title": "JAUBASAR TEAM",
+        "video.item1.description": "Жұмыстың мысалы",
+        "video.item2.title": "Ою-өрнек",
+        "video.item2.description": "Жұмыстың мысалы",
+        "video.item3.title": "Жақындарыма",
+        "video.item3.description": "Жұмыстың мысалы",
 
         // Footer
         "footer.tagline": "Машиналық кесте — шығармашылық пен табысқа жолыңыз",

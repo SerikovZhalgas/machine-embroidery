@@ -1,6 +1,6 @@
-import learnPreparation from "@/assets/learn-preparation.jpg";
-import learnDesign from "@/assets/learn-design.jpg";
-import learnCommercial from "@/assets/learn-commercial.jpg";
+import learnPreparation from "@/assets/images/learn-preparation.jpg";
+import learnDesign from "@/assets/images/learn-design.jpg";
+import learnCommercial from "@/assets/images/learn-commercial.jpg";
 import {useLanguage} from "@/contexts/LanguageContext.tsx";
 
 const LearnSection = () => {

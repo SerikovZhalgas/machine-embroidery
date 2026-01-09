@@ -7,6 +7,7 @@ import FooterSection from "@/components/sections/FooterSection";
 import LanguageSwitcher from "@/components/LanguageSwitcher.tsx";
 import ReviewsSection from "@/components/sections/ReviewsSection.tsx";
 import {FranchiseSection} from "@/components/sections/FranchiseSection.tsx";
+import VideoSection from "@/components/sections/VideoSection.tsx";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <HeroSection />
       <LearnSection />
       <PortfolioSection />
+        <VideoSection />
       <FormatSection />
         <ReviewsSection />
       <InstructorSection />
