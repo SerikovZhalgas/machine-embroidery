@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import instructorImage from "@/assets/images/instructor.png";
+import instructorImage from "@/assets/images/instructor2.jpeg";
 import {useLanguage} from "@/contexts/LanguageContext.tsx";
 import {handleBooking} from "@/lib/utils.ts";
 

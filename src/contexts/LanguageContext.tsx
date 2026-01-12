@@ -69,14 +69,14 @@ const translations: Record<Language, Record<string, string>> = {
     },
     kk: {
         // Hero
-        "hero.title1": "Машиналық кестені меңгер және",
-        "hero.title2": "табыс таба",
-        "hero.title3": "бастаңыз өз шығармашылығыңызбен",
+        "hero.title1": "КЕСТЕЛЕУДІ 10 күнде үйреніп, алғашқы",
+        "hero.title2": "табысыңды",
+        "hero.title3": "тап",
         "hero.subtitle": "Алғашқы тігістерден кесте машинасында сенімді жұмысқа дейін",
         "hero.cta": "Курсқа жазылу",
         "hero.benefit1": "Жаңадан бастаушылар мен шеберлерге",
         "hero.benefit2": "Үйден жұмыс",
-        "hero.benefit3": "Өзіңіздің табысты тауашаңыз",
+        "hero.benefit3": "Өзіңіздің алғашқы табысыңыз",
 
         // Learn
         "learn.title": "Сіз не үйренесіз",

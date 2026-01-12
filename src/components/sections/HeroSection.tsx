@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/images/hero-embroidery.jpg";
+import heroImage from "@/assets/images/work3.jpeg";
 import { Sparkles, Home, TrendingUp } from "lucide-react";
 import {ThemeSwitcher} from "@/switcher/ThemeSwitcher.tsx";
 import {useTheme} from "@/hooks/useTheme.ts";
